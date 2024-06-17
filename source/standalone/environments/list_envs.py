@@ -15,12 +15,10 @@ with `Isaac` in their name.
 
 """Launch Isaac Sim Simulator first."""
 
-#import sys
-#sys.path.append("/home/nver/Documents/orbit/Orbit/source/extensions/omni.isaac.orbit")
 
 #from omni.isaac.orbit.app import AppLauncher
-#import isaacsim
-from omni.isaac.lab.app import AppLauncher
+
+from omni.isaac.lab.app import AppLauncher # Yisen
 
 # launch omniverse app
 app_launcher = AppLauncher(headless=True)
