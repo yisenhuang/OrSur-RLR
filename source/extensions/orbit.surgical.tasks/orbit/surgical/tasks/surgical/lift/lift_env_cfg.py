@@ -215,7 +215,7 @@ class CurriculumCfg:
 
 
 @configclass
-class LiftEnvCfg(RLTaskEnvCfg):
+class LiftEnvCfg(ManagerBasedRLEnvCfg):
     """Configuration for the lifting environment."""
 
     # Scene settings

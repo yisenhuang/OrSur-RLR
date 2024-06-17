@@ -163,7 +163,7 @@ class CurriculumCfg:
 
 
 @configclass
-class ReachEnvCfg(RLTaskEnvCfg):
+class ReachEnvCfg(ManagerBasedRLEnvCfg):
     """Configuration for the reach end-effector pose tracking environment."""
 
     # Scene settings

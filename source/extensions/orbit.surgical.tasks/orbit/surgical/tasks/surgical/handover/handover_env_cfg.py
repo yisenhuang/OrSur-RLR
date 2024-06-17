@@ -206,7 +206,7 @@ class CurriculumCfg:
 
 
 @configclass
-class HandoverEnvCfg(RLTaskEnvCfg):
+class HandoverEnvCfg(ManagerBasedRLEnvCfg):
     """Configuration for the handover environment."""
 
     # Scene settings
