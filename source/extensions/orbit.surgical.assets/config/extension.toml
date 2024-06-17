@@ -12,7 +12,7 @@ category = "robotics"
 keywords = ["kit", "robotics", "assets", "orbit"]
 
 [dependencies]
-"omni.isaac.orbit" = {}
+"omni.isaac.lab" = {}
 
 # Main python module this extension provides.
 [[python.module]]
