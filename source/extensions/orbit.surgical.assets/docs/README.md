@@ -31,7 +31,7 @@ You can use the following snippet to refer to the assets:
 
 ```python
 
-from omni.isaac.orbit_assets import ORBIT_ASSETS_DATA_DIR
+from omni.isaac.lab_assets import ORBIT_ASSETS_DATA_DIR
 
 
 # ANYmal-C
