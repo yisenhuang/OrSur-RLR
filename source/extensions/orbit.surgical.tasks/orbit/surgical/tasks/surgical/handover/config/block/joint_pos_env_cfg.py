@@ -5,13 +5,22 @@
 
 from orbit.surgical.assets import ORBIT_ASSETS_DATA_DIR
 
-from omni.isaac.orbit.assets import RigidObjectCfg
-from omni.isaac.orbit.assets.articulation import ArticulationCfg
-from omni.isaac.orbit.sensors import FrameTransformerCfg
-from omni.isaac.orbit.sensors.frame_transformer.frame_transformer_cfg import OffsetCfg
-from omni.isaac.orbit.sim.schemas.schemas_cfg import RigidBodyPropertiesCfg
-from omni.isaac.orbit.sim.spawners.from_files.from_files_cfg import UsdFileCfg
-from omni.isaac.orbit.utils import configclass
+# from omni.isaac.orbit.assets import RigidObjectCfg
+# from omni.isaac.orbit.assets.articulation import ArticulationCfg
+# from omni.isaac.orbit.sensors import FrameTransformerCfg
+# from omni.isaac.orbit.sensors.frame_transformer.frame_transformer_cfg import OffsetCfg
+# from omni.isaac.orbit.sim.schemas.schemas_cfg import RigidBodyPropertiesCfg
+# from omni.isaac.orbit.sim.spawners.from_files.from_files_cfg import UsdFileCfg
+# from omni.isaac.orbit.utils import configclass
+
+# Yisen: module name change
+from omni.isaac.lab.assets import RigidObjectCfg
+from omni.isaac.lab.assets.articulation import ArticulationCfg
+from omni.isaac.lab.sensors import FrameTransformerCfg
+from omni.isaac.lab.sensors.frame_transformer.frame_transformer_cfg import OffsetCfg
+from omni.isaac.lab.sim.schemas.schemas_cfg import RigidBodyPropertiesCfg
+from omni.isaac.lab.sim.spawners.from_files.from_files_cfg import UsdFileCfg
+from omni.isaac.lab.utils import configclass
 
 from orbit.surgical.tasks.surgical.handover import mdp
 from orbit.surgical.tasks.surgical.handover.handover_env_cfg import HandoverEnvCfg

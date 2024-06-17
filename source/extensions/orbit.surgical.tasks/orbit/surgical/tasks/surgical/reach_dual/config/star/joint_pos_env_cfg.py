@@ -7,13 +7,22 @@ from __future__ import annotations
 
 import math
 
-import omni.isaac.orbit.sim as sim_utils
-from omni.isaac.orbit.assets import AssetBaseCfg
-from omni.isaac.orbit.assets.articulation import ArticulationCfg
-from omni.isaac.orbit.managers import EventTermCfg as EventTerm
-from omni.isaac.orbit.managers import SceneEntityCfg
-from omni.isaac.orbit.utils import configclass
-from omni.isaac.orbit.utils.assets import ISAAC_NUCLEUS_DIR
+# import omni.isaac.orbit.sim as sim_utils
+# from omni.isaac.orbit.assets import AssetBaseCfg
+# from omni.isaac.orbit.assets.articulation import ArticulationCfg
+# from omni.isaac.orbit.managers import EventTermCfg as EventTerm
+# from omni.isaac.orbit.managers import SceneEntityCfg
+# from omni.isaac.orbit.utils import configclass
+# from omni.isaac.orbit.utils.assets import ISAAC_NUCLEUS_DIR
+
+# Yisen: module name change
+import omni.isaac.lab.sim as sim_utils
+from omni.isaac.lab.assets import AssetBaseCfg
+from omni.isaac.lab.assets.articulation import ArticulationCfg
+from omni.isaac.lab.managers import EventTermCfg as EventTerm
+from omni.isaac.lab.managers import SceneEntityCfg
+from omni.isaac.lab.utils import configclass
+from omni.isaac.lab.utils.assets import ISAAC_NUCLEUS_DIR
 
 import orbit.surgical.tasks.surgical.reach_dual.mdp as mdp
 from orbit.surgical.tasks.surgical.reach_dual.reach_env_cfg import ReachEnvCfg

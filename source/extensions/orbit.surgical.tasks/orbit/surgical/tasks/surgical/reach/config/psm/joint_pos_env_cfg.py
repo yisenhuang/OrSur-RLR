@@ -9,10 +9,16 @@ import math
 
 from orbit.surgical.assets import ORBIT_ASSETS_DATA_DIR
 
-import omni.isaac.orbit.sim as sim_utils
-from omni.isaac.orbit.assets import AssetBaseCfg
-from omni.isaac.orbit.managers import EventTermCfg as EventTerm
-from omni.isaac.orbit.utils import configclass
+# import omni.isaac.orbit.sim as sim_utils
+# from omni.isaac.orbit.assets import AssetBaseCfg
+# from omni.isaac.orbit.managers import EventTermCfg as EventTerm
+# from omni.isaac.orbit.utils import configclass
+
+# Yisen: module name change
+import omni.isaac.lab.sim as sim_utils
+from omni.isaac.lab.assets import AssetBaseCfg
+from omni.isaac.lab.managers import EventTermCfg as EventTerm
+from omni.isaac.lab.utils import configclass
 
 import orbit.surgical.tasks.surgical.reach.mdp as mdp
 from orbit.surgical.tasks.surgical.reach.reach_env_cfg import ReachEnvCfg

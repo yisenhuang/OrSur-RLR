@@ -9,7 +9,10 @@
 
 import argparse
 
-from omni.isaac.orbit.app import AppLauncher
+# from omni.isaac.orbit.app import AppLauncher
+# Yisen: module name change
+from omni.isaac.lab.app import AppLauncher
+
 
 # add argparse arguments
 parser = argparse.ArgumentParser(description="Random agent for Orbit environments.")
@@ -33,8 +36,14 @@ simulation_app = app_launcher.app
 import gymnasium as gym
 import torch
 
-import omni.isaac.orbit_tasks  # noqa: F401
-from omni.isaac.orbit_tasks.utils import parse_env_cfg
+# import omni.isaac.orbit_tasks  # noqa: F401
+# from omni.isaac.orbit_tasks.utils import parse_env_cfg
+
+# import orbit.surgical.tasks  # noqa: F401
+
+# Yisen: module name change
+import omni.isaac.lab_tasks  # noqa: F401
+from omni.isaac.lab_tasks.utils import parse_env_cfg
 
 import orbit.surgical.tasks  # noqa: F401
 

@@ -5,7 +5,10 @@
 
 """Launch Isaac Sim Simulator first."""
 
-from omni.isaac.orbit.app import AppLauncher, run_tests
+# from omni.isaac.orbit.app import AppLauncher, run_tests
+# Yisen: module name change
+from omni.isaac.lab.app import AppLauncher, run_tests
+
 
 # launch the simulator
 app_launcher = AppLauncher(headless=True)
@@ -18,7 +21,9 @@ import os
 import torch
 import unittest
 
-from omni.isaac.orbit_tasks.utils.data_collector import RobomimicDataCollector
+# from omni.isaac.orbit_tasks.utils.data_collector import RobomimicDataCollector
+# Yisen: module name change
+from omni.isaac.lab_tasks.utils.data_collector import RobomimicDataCollector
 
 
 class TestRobomimicDataCollector(unittest.TestCase):

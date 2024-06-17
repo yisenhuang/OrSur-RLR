@@ -8,12 +8,20 @@ from __future__ import annotations
 import torch
 from typing import TYPE_CHECKING
 
-from omni.isaac.orbit.assets import RigidObject
-from omni.isaac.orbit.managers import SceneEntityCfg
-from omni.isaac.orbit.utils.math import combine_frame_transforms, quat_error_magnitude, quat_mul
+# from omni.isaac.orbit.assets import RigidObject
+# from omni.isaac.orbit.managers import SceneEntityCfg
+# from omni.isaac.orbit.utils.math import combine_frame_transforms, quat_error_magnitude, quat_mul
+
+# if TYPE_CHECKING:
+#     from omni.isaac.orbit.envs import RLTaskEnv
+
+# Yisen: module name change
+from omni.isaac.lab.assets import RigidObject
+from omni.isaac.lab.managers import SceneEntityCfg
+from omni.isaac.lab.utils.math import combine_frame_transforms, quat_error_magnitude, quat_mul
 
 if TYPE_CHECKING:
-    from omni.isaac.orbit.envs import RLTaskEnv
+    from omni.isaac.lab.envs import RLTaskEnv
 
 
 def position_command_error(env: RLTaskEnv, command_name: str, asset_cfg: SceneEntityCfg) -> torch.Tensor:

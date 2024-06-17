@@ -3,13 +3,23 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 
-from omni.isaac.orbit.utils import configclass
+# from omni.isaac.orbit.utils import configclass
 
-from omni.isaac.orbit_tasks.utils.wrappers.rsl_rl import (
+# from omni.isaac.orbit_tasks.utils.wrappers.rsl_rl import (
+#     RslRlOnPolicyRunnerCfg,
+#     RslRlPpoActorCriticCfg,
+#     RslRlPpoAlgorithmCfg,
+# )
+
+# Yisen: module name change
+from omni.isaac.lab.utils import configclass
+
+from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import (
     RslRlOnPolicyRunnerCfg,
     RslRlPpoActorCriticCfg,
     RslRlPpoAlgorithmCfg,
 )
+
 
 
 @configclass

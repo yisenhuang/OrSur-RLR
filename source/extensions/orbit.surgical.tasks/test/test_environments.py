@@ -5,7 +5,11 @@
 
 """Launch Isaac Sim Simulator first."""
 
-from omni.isaac.orbit.app import AppLauncher, run_tests
+# from omni.isaac.orbit.app import AppLauncher, run_tests
+# Yisen: module name change
+from omni.isaac.lab.app import AppLauncher, run_tests
+
+
 
 # launch the simulator
 app_launcher = AppLauncher(headless=True)
@@ -20,10 +24,16 @@ import unittest
 
 import omni.usd
 
-from omni.isaac.orbit.envs import RLTaskEnv, RLTaskEnvCfg
+# from omni.isaac.orbit.envs import RLTaskEnv, RLTaskEnvCfg
 
-import omni.isaac.orbit_tasks  # noqa: F401
-from omni.isaac.orbit_tasks.utils.parse_cfg import parse_env_cfg
+# import omni.isaac.orbit_tasks  # noqa: F401
+# from omni.isaac.orbit_tasks.utils.parse_cfg import parse_env_cfg
+
+# Yisen: module name change
+from omni.isaac.lab.envs import RLTaskEnv, RLTaskEnvCfg
+
+import omni.isaac.lab_tasks  # noqa: F401
+from omni.isaac.lab_tasks.utils.parse_cfg import parse_env_cfg
 
 import orbit.surgical.tasks  # noqa: F401
 

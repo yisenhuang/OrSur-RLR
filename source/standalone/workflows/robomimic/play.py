@@ -9,7 +9,9 @@
 
 import argparse
 
-from omni.isaac.orbit.app import AppLauncher
+# from omni.isaac.orbit.app import AppLauncher
+# Yisen: module name change
+from omni.isaac.lab.app import AppLauncher
 
 # add argparse arguments
 parser = argparse.ArgumentParser(description="Play policy trained using robomimic for Orbit environments.")
@@ -37,8 +39,12 @@ import robomimic  # noqa: F401
 import robomimic.utils.file_utils as FileUtils
 import robomimic.utils.torch_utils as TorchUtils
 
-import omni.isaac.orbit_tasks  # noqa: F401
-from omni.isaac.orbit_tasks.utils import parse_env_cfg
+# import omni.isaac.orbit_tasks  # noqa: F401
+# from omni.isaac.orbit_tasks.utils import parse_env_cfg
+
+# Yisen: module name change
+import omni.isaac.lab_tasks  # noqa: F401
+from omni.isaac.lab_tasks.utils import parse_env_cfg
 
 import orbit.surgical.tasks  # noqa: F401
 

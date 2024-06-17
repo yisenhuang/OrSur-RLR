@@ -18,7 +18,7 @@ from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import (
     RslRlOnPolicyRunnerCfg,
     RslRlPpoActorCriticCfg,
     RslRlPpoAlgorithmCfg,
-) # Yisen name change
+) # Yisen: module name change
 
 
 @configclass

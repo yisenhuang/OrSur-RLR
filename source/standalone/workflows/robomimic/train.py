@@ -41,7 +41,10 @@ This file has been modified from the original version in the following ways:
 
 """Launch Isaac Sim Simulator first."""
 
-from omni.isaac.orbit.app import AppLauncher
+# from omni.isaac.orbit.app import AppLauncher
+# Yisen: module name change
+from omni.isaac.lab.app import AppLauncher
+
 
 # launch omniverse app
 app_launcher = AppLauncher(headless=True)
@@ -72,7 +75,10 @@ from robomimic.config import config_factory
 from robomimic.utils.log_utils import DataLogger, PrintLogger
 
 # Needed so that environment is registered
-import omni.isaac.orbit_tasks  # noqa: F401
+# import omni.isaac.orbit_tasks  # noqa: F401
+# Yisen: module name change
+import omni.isaac.lab_tasks  # noqa: F401
+
 
 import orbit.surgical.tasks  # noqa: F401
 

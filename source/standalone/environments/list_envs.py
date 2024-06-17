@@ -17,8 +17,8 @@ with `Isaac` in their name.
 
 
 #from omni.isaac.orbit.app import AppLauncher
-
-from omni.isaac.lab.app import AppLauncher # Yisen name change
+# Yisen: module name change
+from omni.isaac.lab.app import AppLauncher 
 
 # launch omniverse app
 app_launcher = AppLauncher(headless=True)
@@ -31,6 +31,7 @@ import gymnasium as gym
 from prettytable import PrettyTable
 
 #import omni.isaac.orbit_tasks  # noqa: F401
+# Yisen: module name change
 import omni.isaac.lab_tasks
 
 import orbit.surgical.tasks  # noqa: F401

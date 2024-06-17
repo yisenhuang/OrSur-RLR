@@ -8,8 +8,14 @@ from __future__ import annotations
 import argparse
 from typing import TYPE_CHECKING
 
+# if TYPE_CHECKING:
+#     from omni.isaac.orbit_tasks.utils.wrappers.rsl_rl import RslRlOnPolicyRunnerCfg
+
+# Yisen: module name change
+
 if TYPE_CHECKING:
-    from omni.isaac.orbit_tasks.utils.wrappers.rsl_rl import RslRlOnPolicyRunnerCfg
+    from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import RslRlOnPolicyRunnerCfg
+
 
 
 def add_rsl_rl_args(parser: argparse.ArgumentParser):
