@@ -15,7 +15,12 @@ with `Isaac` in their name.
 
 """Launch Isaac Sim Simulator first."""
 
-from omni.isaac.orbit.app import AppLauncher
+#import sys
+#sys.path.append("/home/nver/Documents/orbit/Orbit/source/extensions/omni.isaac.orbit")
+
+#from omni.isaac.orbit.app import AppLauncher
+#import isaacsim
+from omni.isaac.lab.app import AppLauncher
 
 # launch omniverse app
 app_launcher = AppLauncher(headless=True)
@@ -27,7 +32,8 @@ simulation_app = app_launcher.app
 import gymnasium as gym
 from prettytable import PrettyTable
 
-import omni.isaac.orbit_tasks  # noqa: F401
+#import omni.isaac.orbit_tasks  # noqa: F401
+import omni.isaac.lab_tasks
 
 import orbit.surgical.tasks  # noqa: F401
 
