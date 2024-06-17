@@ -58,7 +58,7 @@ from rsl_rl.runners import OnPolicyRunner
 # from omni.isaac.orbit_tasks.utils.wrappers.rsl_rl import RslRlOnPolicyRunnerCfg, RslRlVecEnvWrapper
 
 # Yisen: module name change
-from omni.isaac.lab.envs import RLTaskEnvCfg
+from omni.isaac.lab.envs import ManagerBasedRLEnv
 from omni.isaac.lab.utils.dict import print_dict
 from omni.isaac.lab.utils.io import dump_pickle, dump_yaml
 
