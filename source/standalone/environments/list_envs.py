@@ -18,7 +18,7 @@ with `Isaac` in their name.
 
 #from omni.isaac.orbit.app import AppLauncher
 
-from omni.isaac.lab.app import AppLauncher # Yisen
+from omni.isaac.lab.app import AppLauncher # Yisen name change
 
 # launch omniverse app
 app_launcher = AppLauncher(headless=True)
