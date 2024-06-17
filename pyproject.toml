@@ -47,9 +47,9 @@ known_thirdparty = [
     "carb",
 ]
 known_orbitparty = [
-    "omni.isaac.orbit",
-    "omni.isaac.orbit_tasks",
-    "omni.isaac.orbit_assets"
+    "omni.isaac.lab",
+    "omni.isaac.lab_tasks",
+    "omni.isaac.lab_assets"
 ]
 # Imports from this repository
 known_first_party = "orbit.surgical.tasks"

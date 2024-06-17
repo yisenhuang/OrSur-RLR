@@ -17,7 +17,8 @@ from . import agents, ik_abs_env_cfg, ik_rel_env_cfg, joint_pos_env_cfg
 
 gym.register(
     id="Isaac-Reach-STAR-v0",
-    entry_point="omni.isaac.orbit.envs:RLTaskEnv",
+    # entry_point="omni.isaac.orbit.envs:RLTaskEnv", # Yisen module name change
+    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": joint_pos_env_cfg.STARReachEnvCfg,
@@ -27,7 +28,8 @@ gym.register(
 
 gym.register(
     id="Isaac-Reach-STAR-Play-v0",
-    entry_point="omni.isaac.orbit.envs:RLTaskEnv",
+    # entry_point="omni.isaac.orbit.envs:RLTaskEnv", # Yisen module name change
+    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": joint_pos_env_cfg.STARReachEnvCfg_PLAY,
@@ -41,7 +43,8 @@ gym.register(
 
 gym.register(
     id="Isaac-Reach-STAR-IK-Abs-v0",
-    entry_point="omni.isaac.orbit.envs:RLTaskEnv",
+    # entry_point="omni.isaac.orbit.envs:RLTaskEnv", # Yisen module name change
+    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
     kwargs={
         "env_cfg_entry_point": ik_abs_env_cfg.STARReachEnvCfg,
         "rsl_rl_cfg_entry_point": agents.rsl_rl_cfg.STARReachPPORunnerCfg,
@@ -51,7 +54,8 @@ gym.register(
 
 gym.register(
     id="Isaac-Reach-STAR-IK-Abs-Play-v0",
-    entry_point="omni.isaac.orbit.envs:RLTaskEnv",
+    # entry_point="omni.isaac.orbit.envs:RLTaskEnv", # Yisen module name change
+    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
     kwargs={
         "env_cfg_entry_point": ik_abs_env_cfg.STARReachEnvCfg_PLAY,
         "rsl_rl_cfg_entry_point": agents.rsl_rl_cfg.STARReachPPORunnerCfg,
@@ -65,7 +69,8 @@ gym.register(
 
 gym.register(
     id="Isaac-Reach-STAR-IK-Rel-v0",
-    entry_point="omni.isaac.orbit.envs:RLTaskEnv",
+    # entry_point="omni.isaac.orbit.envs:RLTaskEnv", # Yisen module name change
+    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
     kwargs={
         "env_cfg_entry_point": ik_rel_env_cfg.STARReachEnvCfg,
         "rsl_rl_cfg_entry_point": agents.rsl_rl_cfg.STARReachPPORunnerCfg,
@@ -75,7 +80,8 @@ gym.register(
 
 gym.register(
     id="Isaac-Reach-STAR-IK-Rel-Play-v0",
-    entry_point="omni.isaac.orbit.envs:RLTaskEnv",
+    # entry_point="omni.isaac.orbit.envs:RLTaskEnv", # Yisen module name change
+    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
     kwargs={
         "env_cfg_entry_point": ik_rel_env_cfg.STARReachEnvCfg_PLAY,
         "rsl_rl_cfg_entry_point": agents.rsl_rl_cfg.STARReachPPORunnerCfg,
