@@ -12,7 +12,6 @@ from typing import TYPE_CHECKING
 #     from omni.isaac.orbit_tasks.utils.wrappers.rsl_rl import RslRlOnPolicyRunnerCfg
 
 # Yisen: module name change
-
 if TYPE_CHECKING:
     from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import RslRlOnPolicyRunnerCfg
 

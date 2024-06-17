@@ -9,7 +9,6 @@
 # from omni.isaac.orbit.utils import configclass
 
 # Yisen: module name change
-
 from omni.isaac.lab.assets.articulation import ArticulationCfg
 from omni.isaac.lab.controllers.differential_ik_cfg import DifferentialIKControllerCfg
 from omni.isaac.lab.envs.mdp.actions.actions_cfg import DifferentialInverseKinematicsActionCfg
