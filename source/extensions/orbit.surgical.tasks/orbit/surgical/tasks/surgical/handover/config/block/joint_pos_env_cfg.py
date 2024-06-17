@@ -28,7 +28,9 @@ from orbit.surgical.tasks.surgical.handover.handover_env_cfg import HandoverEnvC
 ##
 # Pre-defined configs
 ##
-from omni.isaac.orbit.markers.config import FRAME_MARKER_CFG  # isort: skip
+# from omni.isaac.orbit.markers.config import FRAME_MARKER_CFG  # isort: skip
+
+from omni.isaac.lab.markers.config import FRAME_MARKER_CFG  # isort: skip
 from orbit.surgical.assets.psm import PSM_CFG  # isort: skip
 
 
